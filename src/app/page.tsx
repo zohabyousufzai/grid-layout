@@ -1,101 +1,96 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    // <div className='grid grid-cols-3 grid-rows-[200px_200px_200px] text-slate-100 gap-3'>
+    //     <div className='bg-green-900 col-span-3'>Box1</div>
+    //     <div className='bg-purple-900 row-span-3'>Box2</div>
+    //     <div className='bg-red-900 col-span-2 row-span-2'>Box3</div>
+    // </div>
+//  <div className='grid grid-cols-3  grid-rows-[100px_200px_200px_100px] gap-5 bg-black'>
+//     <div className='bg-purple-900 text-yellow-50 col-span-3 text-[36px] font-bold text-center content-center border-2 border-white'>Header</div>
+//     <div className='bg-green-400 text-yellow-50 row-span-2 text-[36px] font-bold text-center content-center border-2 border-white '>Slidebare</div>
+//     <div className='bg-blue-500  text-yellow-50 col-span-2 row-span-1 text-[36px] font-bold text-center content-center border-2 border-white'>Content1</div>
+//     <div className='bg-yellow-500 text-yellow-50 text-[36px] font-bold text-center content-center border-2 border-white'>Content2</div>
+//     <div className='bg-orange-500 text-yellow-50 text-[36px] font-bold text-center content-center border-2 border-white'>Content3</div>
+//     <div className='bg-pink-500 text-yellow-50 col-span-3 text-[36px] font-bold text-center content-center border-2 border-white'>Footer</div>
+//  </div>
+                    
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+              // <div className='flex justify-center  items-center gap-3 h-screen relative'>
+             
+              //   <div className='bg-pink-700 w-80 h-80 '>Box 1</div>
+              //   <div className='bg-yellow-500 w-80 h-80'>Box 2</div>
+              //   <div className='bg-sky-700  w-80 h-80'>Box 3</div>
+              //   <div className='bg-indigo-950  w-80 h-80'>Box 4</div>
+              //   <div className='bg-orange-500  w-80 h-80'>Box 1</div>
+              //   <div className='bg-yellow-500  w-80 h-80'>Box 2</div>
+              //   <div className='bg-sky-700  w-80 h-80'>Box 3</div>
+               
+              // </div>
+   
+              
+            //   <div className="grid grid-cols- sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+            //   <div className="bg-yellow-200 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 1
+            //   </div>
+            //   <div className="bg-red-400 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 2
+            //   </div>
+            //   <div className="bg-blue-400 p-4 row-span-2 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 3
+            //   </div>
+            //   <div className="bg-pink-400 p-4 col-span-2 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 4
+            //   </div>
+            //   <div className="bg-orange-400 p-4 col-span-2 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 5
+            //   </div>
+            //   <div className="bg-purple-400 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-md">
+            //     Item 6
+            //   </div>
+            // </div>
+
+
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+            {/* Item 1 */}
+            <div className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 1</span>
+            </div>
+      
+            {/* Item 2 */}
+            <div className="bg-gradient-to-r from-blue-400 via-green-500 to-teal-600 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 2</span>
+            </div>
+      
+            {/* Item 3 */}
+            <div className="bg-gradient-to-r from-purple-500 via-pink-600 to-indigo-700 p-4 row-span-2 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 3</span>
+            </div>
+      
+            {/* Item 4 */}
+            <div className="bg-gradient-to-r from-teal-500 via-green-600 to-lime-700 p-4 col-span-2 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 4</span>
+            </div>
+      
+            {/* Item 5 */}
+            <div className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-700 p-4 col-span-2 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 5</span>
+            </div>
+      
+            {/* Item 6 */}
+            <div className="bg-gradient-to-r from-indigo-600 via-blue-700 to-purple-800 p-4 col-span-3 flex items-center justify-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+              <span className="text-white text-[28px] font-semibold">Item 6</span>
+            </div>
+          </div>
+ 
+          )
 }
+
+export default Home
+
+
+
+
